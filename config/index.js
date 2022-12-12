@@ -9,6 +9,10 @@ export const APP_DEBUG = env.APP_DEBUG === 'true' || false;
 export const APP_URL = env.APP_URL || null;
 export const APP_PORT = env.APP_PORT || null;
 
+export const BOT_CALL_SIGN = env.BOT_CALL_SIGN || null;
+export const BOT_ACTIVATE_WORDS = env.BOT_ACTIVATE_WORDS || null;
+export const BOT_DEACTIVATE_WORDS = env.BOT_DEACTIVATE_WORDS || null;
+
 export const OPENAI_API_KEY = env.OPENAI_API_KEY || null;
 export const OPENAI_COMPLETION_INIT_LANG = env.OPENAI_COMPLETION_INIT_LANG || 'zh';
 export const OPENAI_COMPLETION_MODEL = env.OPENAI_COMPLETION_MODEL || 'text-davinci-003';

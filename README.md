@@ -52,6 +52,9 @@ GPT AI Assistant 是基於 OpenAI API 與 LINE Messaging API 實作的範例應�
 名字 | 說明
 --- | ---
 `APP_DEBUG` | 決定是否印出訊息，可設置為 `true` 或 `false`
+`BOT_CALL_SIGN` | 決定 AI 助理的呼號，例如「`嘿！`」
+`BOT_ACTIVATE_WORDS` | 決定將 AI 助理開機的關鍵字，例如「`開始,早安,你好`」
+`BOT_DEACTIVATE_WORDS` | 決定將 AI 助理關機的關鍵字，例如「`結束,晚安,再見`」
 `OPENAI_API_KEY` | OpenAI 的 API key
 `OPENAI_COMPLETION_INIT_LANG` | 決定初始語言，可設置為 `zh` 或 `en`
 `OPENAI_COMPLETION_MODEL` | 參見 [model](https://beta.openai.com/docs/api-reference/completions/create#completions/create-model) 說明
@@ -131,16 +134,9 @@ cp .env.example .env
 ```env
 APP_ENV=local
 APP_DEBUG=true
-APP_URL=
 APP_PORT=3000
 
 OPENAI_API_KEY=<your_openai_api_key>
-OPENAI_COMPLETION_INIT_LANG=
-OPENAI_COMPLETION_MODEL=
-OPENAI_COMPLETION_TEMPERATURE=
-OPENAI_COMPLETION_MAX_TOKENS=
-OPENAI_COMPLETION_FREQUENCY_PENALTY=
-OPENAI_COMPLETION_PRESENCE_PENALTY=
 
 LINE_API_KEY=<your_channel_access_token>
 LINE_API_SECRET=<your_channel_secret>
